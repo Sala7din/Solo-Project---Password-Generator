@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    
+}
+
+#passwordGenerator {
+    margin: auto auto;
+    width: 550px;
+    height: 550px;
+    background-color:#1F2937;
+}
