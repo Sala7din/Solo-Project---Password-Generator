@@ -6,8 +6,8 @@ let password2 = document.getElementById("field2")
 
 function generatePasswords() {
 
-  password1.textContent = "Tesssst1"  
-  password2.textContent = "Tesssst2" 
+  password1.textContent = Math.floor(Math.random() * length.characters)  
+  password2.textContent = Math.floor(Math.random() * length.characters)
     
 }
 
