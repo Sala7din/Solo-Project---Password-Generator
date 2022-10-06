@@ -6,13 +6,23 @@ let password2 = document.getElementById("field2")
 
 function generatePasswords() {
 
+    password1.textContent = ""
+    password2.textContent = ""
+
     for(let i = 0; i < 15; i++){
-        randomNum = Math.floor(Math.random() * length.characters)
-        // let randomPassword = characters[randomNum]
-        // characters[randomNum] += randomPassword
+        let randomNum = Math.floor(Math.random() * characters.length)
+        let randomPassword = characters[randomNum]
+        password1.textContent += randomPassword
+          
+        
     }
-  password1.textContent = randomPassword  
-  password2.textContent = randomPassword
+
+    for(let i = 0; i < 15; i++){
+        let randomNum = Math.floor(Math.random() * characters.length)
+        let randomPassword = characters[randomNum] 
+        password2.textContent += randomPassword
+    }
+  
     
 }
 
